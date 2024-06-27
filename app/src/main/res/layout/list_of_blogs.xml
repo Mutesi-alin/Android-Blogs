@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="192dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176"
+            app:srcCompat="@drawable/jame" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barist Jame Hoofman"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World Atlas Coffee"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="326dp"
+            android:layout_height="244dp"
+            android:layout_marginBottom="184dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/coffe"
+            tools:layout_editor_absoluteX="32dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rwanda-Kigali-2000"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/tvWord"
+            android:layout_width="364dp"
+            android:layout_height="76dp"
+            android:text="Learn about Coffe and other roasting skills, its not just about coffe but also what make you like it. it is journey not a destionation .Always find the way to taste and explore new things"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="576dp" />
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Made Coffee"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
