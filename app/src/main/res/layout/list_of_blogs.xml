@@ -3,55 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+
+
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/tvImage"
             android:layout_width="170dp"
             android:layout_height="192dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.176"
+            app:layout_constraintVertical_bias="0.092"
             app:srcCompat="@drawable/jame" />
 
         <TextView
             android:id="@+id/tvName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="163dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:text="Barist Jame Hoofman"
-            tools:layout_editor_absoluteX="240dp"
-            tools:layout_editor_absoluteY="120dp" />
+            app:layout_constraintStart_toEndOf="@+id/tvImage"
+            app:layout_constraintTop_toTopOf="@+id/tvImage" />
 
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="162dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
             android:text="World Atlas Coffee"
-            tools:layout_editor_absoluteX="240dp"
-            tools:layout_editor_absoluteY="153dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/tvImage"
+            app:layout_constraintStart_toEndOf="@+id/tvImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:layout_constraintVertical_bias="0.492" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="326dp"
-            android:layout_height="244dp"
-            android:layout_marginBottom="184dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:srcCompat="@drawable/coffe"
-            tools:layout_editor_absoluteX="32dp" />
+            android:layout_width="316dp"
+            android:layout_height="202dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImage"
+            app:srcCompat="@drawable/coffe" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tvPublication"
+            android:layout_width="161dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
             android:text="Rwanda-Kigali-2000"
-            tools:layout_editor_absoluteX="233dp"
-            tools:layout_editor_absoluteY="196dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/tvImage"
+            app:layout_constraintStart_toEndOf="@+id/tvImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintVertical_bias="0.21" />
 
         <TextView
             android:id="@+id/tvWord"
@@ -59,17 +75,31 @@
             android:layout_height="76dp"
             android:text="Learn about Coffe and other roasting skills, its not just about coffe but also what make you like it. it is journey not a destionation .Always find the way to taste and explore new things"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="576dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
             android:id="@+id/tvHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="24dp"
             android:text="Home Made Coffee"
-            tools:layout_editor_absoluteX="143dp"
-            tools:layout_editor_absoluteY="25dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tvButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Read More"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWord" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
